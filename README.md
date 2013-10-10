@@ -17,6 +17,7 @@ Logstash actually seems to have an input plugin for Twitter but I couldn't make 
 1. I recommend creating an isolated virtual environment for python before installing Tweepy. Go through [this](https://pypi.python.org/pypi/virtualenv) and have it installed in your user area.
 2. Install tweepy ( inside the virtualenv you just created )
     pip install tweepy
+     
 3. We will use Twitter's [Streaming API](https://dev.twitter.com/docs/streaming-apis) to access the tweets. 
 4. In order to use it, we need to  get the following information
  * Consumer Key
@@ -25,3 +26,11 @@ Logstash actually seems to have an input plugin for Twitter but I couldn't make 
  * Access Token Secret
   
 Follow the instructions [here](https://dev.twitter.com/docs/auth/tokens-devtwittercom) to setup a Twitter 'Application' and get this information.
+
+5. I have included the simple wrapper around Tweepy to get the tweets and write them into a file. 
+   Update tweepy/oauth.token with the 4 pieces of information.
+   
+6. Run Tests.py and redirect the output to a file.
+    python Tests.py | tee tweets
+    
+7.
