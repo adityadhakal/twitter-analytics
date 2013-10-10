@@ -1,8 +1,8 @@
 twitter-analytics
 =================
 
-Analysis/Visualisation of Tweets 
+#Analysis/Visualisation of Tweets 
 
-Dependencies:
-1. Tweepy ( Twitter API for python )
-2. Logstash ( including Elastic-Search and Kibana )
+## Dependencies
+* Tweepy ( Twitter API for python )
+* Logstash ( including Elastic-Search and Kibana )
